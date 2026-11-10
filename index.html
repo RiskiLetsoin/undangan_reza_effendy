@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>The Graduation - Reza Effendy, S.Kom.</title>
+    <meta name="description" content="Undangan Syukuran Wisuda Reza Effendy, S.Kom. - Kamis, 12 November 2026 di Dumar, Tual.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:title" content="Undangan Wisuda - Reza Effendy, S.Kom.">
+    <meta property="og:description" content="Syukuran Wisuda, Kamis 12 November 2026 pukul 01.00 WIT di Dumar (Area Mesjid Al-Jihad), Tual.">
+    <meta property="og:image" content="og-cover.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Cover Undangan Wisuda Reza Effendy, S.Kom.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Undangan Wisuda - Reza Effendy, S.Kom.">
+    <meta name="twitter:description" content="Syukuran Wisuda, Kamis 12 November 2026 pukul 01.00 WIT di Dumar, Tual.">
+    <meta name="twitter:image" content="og-cover.png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#090A0D',
+                        deepblack: '#111318',
+                        chrome: '#C5C9D0',
+                        metallic: '#E5E7EB',
+                        crimson: '#E31837',
+                        softwhite: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'aurora-slow': 'auroraMove 18s ease infinite alternate',
+                        'aurora-pulse': 'auroraPulse 10s ease-in-out infinite alternate',
+                        'float-particle': 'floatParticle 8s ease-in-out infinite alternate',
+                        'glow-pulse': 'glowPulse 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        auroraMove: {
+                            '0%': { transform: 'translate(0px, 0px) rotate(0deg) scale(1)' },
+                            '50%': { transform: 'translate(40px, -60px) rotate(8deg) scale(1.15)' },
+                            '100%': { transform: 'translate(-30px, 40px) rotate(-5deg) scale(1.05)' },
+                        },
+                        auroraPulse: {
+                            '0%': { opacity: 0.25 },
+                            '50%': { opacity: 0.55 },
+                            '100%': { opacity: 0.3 },
+                        },
+                        floatParticle: {
+                            '0%': { transform: 'translateY(0px) translateX(0px)', opacity: 0.3 },
+                            '50%': { transform: 'translateY(-25px) translateX(15px)', opacity: 0.8 },
+                            '100%': { transform: 'translateY(15px) translateX(-10px)', opacity: 0.4 },
+                        },
+                        glowPulse: {
+                            '0%, 100%': { boxShadow: '0 0 15px rgba(227, 24, 55, 0.4), inset 0 0 10px rgba(227, 24, 55, 0.2)' },
+                            '50%': { boxShadow: '0 0 30px rgba(227, 24, 55, 0.85), inset 0 0 15px rgba(227, 24, 55, 0.4)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        /* Custom Styles & Glassmorphism */
+        body {
+            background-color: #090A0D;
+            color: #F5F5F5;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Cards */
+        .glass-card {
+            background: rgba(17, 19, 24, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(197, 201, 208, 0.18);
+        }
+
+        .glass-card,
+        .grain-box {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='.7'/%3E%3C/svg%3E");
+            background-size: 180px 180px;
+            background-blend-mode: soft-light;
+        }
+
+        .glass-card-hover {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glass-card-hover:hover {
+            border-color: rgba(227, 24, 55, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px -10px rgba(227, 24, 55, 0.25);
+        }
+
+        /* Metallic Frames */
+        .silver-frame {
+            position: relative;
+            padding: 6px;
+            background: linear-gradient(135deg, #C5C9D0 0%, #111318 45%, #E5E7EB 100%);
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(227, 24, 55, 0.15);
+        }
+
+        .text-metallic {
+            background: linear-gradient(135deg, #FFFFFF 0%, #C5C9D0 50%, #E5E7EB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .border-metallic-glow {
+            border: 1px solid rgba(197, 201, 208, 0.3);
+            box-shadow: 0 0 15px rgba(197, 201, 208, 0.08);
+        }
+
+        /* Hide scrollbar for clean aesthetic */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090A0D;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #111318;
+            border-radius: 3px;
+            border: 1px solid rgba(197, 201, 208, 0.2);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #E31837;
+        }
+    </style>
+</head>
+<body class="relative min-h-screen selection:bg-crimson selection:text-white">
+
+    <!-- AURORA ATMOSPHERE BACKGROUND EFFECTS -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <!-- Aurora Blob 1 - Crimson Glow -->
+        <div class="absolute -top-[20vw] -left-[20vw] w-[60vw] h-[60vw] rounded-full bg-radial from-crimson/20 via-crimson/5 to-transparent blur-[100px] animate-aurora-slow"></div>
+        <!-- Aurora Blob 2 - Silver Chrome Atmosphere -->
+        <div class="absolute top-[30vh] -right-[15vw] w-[50vw] h-[50vw] rounded-full bg-radial from-chrome/15 via-chrome/5 to-transparent blur-[110px] animate-aurora-slow" style="animation-delay: -5s;"></div>
+        <!-- Aurora Blob 3 - Deep Central Atmosphere -->
+        <div class="absolute -bottom-[10vw] left-[20vw] w-[55vw] h-[55vw] rounded-full bg-radial from-crimson/15 via-chrome/5 to-transparent blur-[120px] animate-aurora-pulse"></div>
+        
+        <!-- Subtle Floating Particles Grid Overlay -->
+        <div class="absolute inset-0 bg-[radial-gradient(#rgba(197,201,208,0.05)_1px,transparent_1px)] [background-size:32px_32px] opacity-40"></div>
+    </div>
+
+    <!-- AUDIO PLAYER (OPTIONAL AMBIENCE) -->
+    <audio id="bg-music" loop>
+        <source src="audio/audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- MUSIC TOGGLE FLOATING BUTTON -->
+    <button id="music-btn" onclick="toggleMusic()" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full glass-card border-metallic-glow flex items-center justify-center text-chrome hover:text-white hover:border-crimson transition-all duration-300 shadow-xl group">
+        <i id="music-icon" class="fa-solid fa-music text-sm group-hover:scale-110 transition-transform"></i>
+    </button>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 transform -translate-y-20 opacity-0 transition-all duration-500 ease-out glass-card border border-crimson/40 text-softwhite px-6 py-3 rounded-full text-sm flex items-center gap-3 shadow-2xl">
+        <i class="fa-solid fa-circle-check text-crimson"></i>
+        <span id="toast-message">Alamat berhasil disalin!</span>
+    </div>
+
+    <!-- 1. COVER / OPENING SCREEN OVERLAY -->
+    <div id="cover-screen" class="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto p-4 bg-obsidian transition-all duration-1000 ease-in-out sm:p-6">
+        <div class="grain-box my-auto w-full max-w-md rounded-xl border border-chrome/15 bg-deepblack p-6 text-center shadow-xl sm:p-8 md:p-10">
+            <p class="text-xs uppercase tracking-[0.2em] text-chrome/70">Undangan Wisuda</p>
+            <h1 class="mt-3 font-serif text-3xl font-semibold text-metallic md:text-4xl">Reza Effendy, S.Kom.</h1>
+
+            <div class="my-7 border-y border-chrome/15 py-5">
+                <p class="text-sm text-chrome/70">Kepada Yth.</p>
+                <h2 id="guest-name" class="mt-1 font-serif text-xl text-metallic md:text-2xl">Tamu Undangan</h2>
+            </div>
+
+            <button onclick="openInvitation()" class="w-full rounded-lg bg-crimson px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-crimson/90 active:scale-[0.98]">
+                Buka Undangan
+            </button>
+        </div>
+    </div>
+
+    <!-- MAIN INVITATION CONTENT (HIDDEN UNTIL OPENED) -->
+    <main id="main-content" class="relative z-10 opacity-0 transition-opacity duration-1000 min-h-screen pb-16">
+        <button id="autoscroll-btn" type="button" onclick="toggleAutoScroll()" aria-label="Lanjutkan scroll otomatis" aria-pressed="false" title="Lanjutkan scroll otomatis" class="fixed bottom-24 right-6 z-40 w-12 h-12 rounded-full glass-card border-metallic-glow flex items-center justify-center text-chrome hover:text-white hover:border-crimson transition-all duration-300 shadow-xl">
+            <i id="autoscroll-icon" class="fa-solid fa-play text-sm"></i>
+            <span id="autoscroll-label" class="sr-only">Lanjutkan scroll otomatis</span>
+        </button>
+        
+        <!-- HEADER / NAVIGATION INDICATOR -->
+        <header class="py-6 text-center border-b border-chrome/10 backdrop-blur-md sticky top-0 z-30 bg-obsidian/60">
+            <span class="font-serif text-sm tracking-[0.2em] text-chrome font-semibold">THE GRADUATION</span>
+        </header>
+
+        <!-- 2. GRADUATE PROFILE SECTION -->
+        <section class="max-w-4xl mx-auto px-4 pt-12 pb-16 text-center">
+            <div class="space-y-3 mb-8">
+                <span class="text-xs uppercase tracking-[0.3em] text-crimson font-semibold">The Graduate</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-metallic">PROFIL WISUDAWAN</h2>
+                <div class="w-16 h-[2px] bg-gradient-to-r from-transparent via-crimson to-transparent mx-auto"></div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center space-y-6">
+                <!-- Frame Photo -->
+                <div class="silver-frame p-2 w-64 h-80 md:w-72 md:h-96 rounded-2xl overflow-hidden group">
+                    <div class="w-full h-full rounded-xl overflow-hidden relative">
+                        <img src="foto/foto.jpeg"
+                             onerror="this.hidden = true; document.getElementById('photo-placeholder').classList.remove('hidden'); document.getElementById('photo-placeholder').classList.add('flex');"
+                             alt="Reza Effendy, S.Kom." 
+                             class="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                        <div id="photo-placeholder" class="absolute inset-0 hidden flex-col items-center justify-center gap-3 bg-deepblack px-4 text-center text-chrome/70">
+                            <i class="fa-solid fa-image text-4xl text-chrome/50"></i>
+                            <p class="text-xs">Foto wisudawan tidak dapat dimuat</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent"></div>
+                    </div>
+                </div>
+
+                <!-- Academic Details -->
+                <div class="space-y-2 max-w-lg">
+                    <h3 class="font-serif text-2xl md:text-3xl text-metallic font-bold">Reza Effendy, S.Kom.</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. FORMAL INVITATION TEXT SECTION -->
+        <section class="max-w-3xl mx-auto px-4 py-8">
+            <div class="glass-card rounded-2xl p-6 sm:p-8 md:p-12 text-center border-metallic-glow relative overflow-hidden shadow-2xl">
+                <!-- Background Ornamental Watermark -->
+                <i class="fa-solid fa-quote-left absolute top-4 left-4 text-6xl text-chrome/5 pointer-events-none"></i>
+                <i class="fa-solid fa-quote-right absolute bottom-4 right-4 text-6xl text-chrome/5 pointer-events-none"></i>
+
+                <p class="font-serif text-lg text-crimson italic mb-4">Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
+                
+                <p class="text-sm md:text-base text-chrome/90 leading-relaxed font-light mb-6">
+                    Dengan penuh rasa syukur kepada Tuhan Yang Maha Esa, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa serta ucapan selamat pada acara syukuran wisuda kami.
+                </p>
+
+                <p class="text-sm md:text-base text-chrome/90 leading-relaxed font-light mb-8">
+                    Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk turut berbagi kebahagiaan dalam momen istimewa ini.
+                </p>
+
+                <div class="pt-4 border-t border-chrome/15 inline-block px-8">
+                    <p class="text-xs text-chrome/60 uppercase tracking-widest mb-1">Hormat Kami,</p>
+                    <p class="font-serif text-lg text-metallic font-semibold">Reza Effendy, S.Kom. & Keluarga</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. EVENT DETAILS & COUNTDOWN SECTION -->
+        <section class="max-w-4xl mx-auto px-4 py-12">
+            <div class="text-center space-y-3 mb-10">
+                <span class="text-xs uppercase tracking-[0.3em] text-crimson font-semibold">Schedule & Location</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-metallic">DETAIL ACARA</h2>
+                <div class="w-16 h-[2px] bg-gradient-to-r from-transparent via-crimson to-transparent mx-auto"></div>
+            </div>
+
+            <!-- Event Card Grid -->
+            <div class="glass-card rounded-2xl p-4 sm:p-6 md:p-10 border-metallic-glow mb-10">
+                <div class="text-center mb-8">
+                    <div class="inline-flex items-center gap-2 text-crimson font-serif text-xl font-bold">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                        <span>Syukuran Wisuda</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 text-center mb-8">
+                    <!-- Date -->
+                    <div class="grain-box p-4 rounded-xl bg-deepblack/60 border border-chrome/15 space-y-2">
+                        <i class="fa-solid fa-calendar-day text-crimson text-xl"></i>
+                        <p class="text-xs text-chrome/60 uppercase tracking-wider">Hari & Tanggal</p>
+                        <p class="font-semibold text-metallic text-sm md:text-base">Kamis, 12 November 2026</p>
+                    </div>
+
+                    <!-- Time -->
+                    <div class="grain-box p-4 rounded-xl bg-deepblack/60 border border-chrome/15 space-y-2">
+                        <i class="fa-solid fa-clock text-crimson text-xl"></i>
+                        <p class="text-xs text-chrome/60 uppercase tracking-wider">Waktu Mulai</p>
+                        <p class="font-semibold text-metallic text-sm md:text-base">01.00 WIT</p>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="grain-box p-4 rounded-xl bg-deepblack/60 border border-chrome/15 space-y-2">
+                        <i class="fa-solid fa-building text-crimson text-xl"></i>
+                        <p class="text-xs text-chrome/60 uppercase tracking-wider">Tempat</p>
+                        <p class="font-semibold text-metallic text-sm md:text-base">Dumar</p>
+                    </div>
+                </div>
+
+                <div class="text-center text-xs md:text-sm text-chrome/80 mb-8 max-w-md mx-auto">
+                    <i class="fa-solid fa-location-dot text-crimson me-1"></i>
+                    <span>Dumar (Area Mesjid Al-Jihad)</span>
+                </div>
+
+                <!-- Interactive Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://maps.app.goo.gl/PDopfG2V5k3FXr428" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-deepblack border border-chrome/30 text-metallic hover:border-crimson hover:text-white transition-all text-xs font-semibold tracking-wider uppercase flex items-center justify-center gap-2 group shadow-md">
+                        <i class="fa-solid fa-map-location-dot text-crimson group-hover:scale-110 transition-transform"></i>
+                        <span>Lihat Lokasi</span>
+                    </a>
+                    <button onclick="copyAddress('Dumar (Area Mesjid Al-Jihad)')" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-deepblack border border-chrome/30 text-metallic hover:border-crimson hover:text-white transition-all text-xs font-semibold tracking-wider uppercase flex items-center justify-center gap-2 group shadow-md">
+                        <i class="fa-solid fa-copy text-chrome group-hover:scale-110 transition-transform"></i>
+                        <span>Salin Alamat</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- COUNTDOWN TIMER CONTAINER -->
+            <div class="text-center space-y-4">
+                <h3 class="font-serif text-xl text-metallic font-semibold">HITUNG MUNDUR ACARA</h3>
+                <div id="countdown-grid" class="grid grid-cols-4 gap-2 sm:gap-3 md:gap-6 max-w-md mx-auto">
+                    <div class="glass-card p-2 sm:p-3 md:p-4 rounded-xl border border-chrome/20 text-center">
+                        <span id="days" class="font-serif text-xl sm:text-2xl md:text-4xl font-bold text-metallic block">00</span>
+                        <span class="text-[10px] md:text-xs text-chrome/60 uppercase">Hari</span>
+                    </div>
+                    <div class="glass-card p-2 sm:p-3 md:p-4 rounded-xl border border-chrome/20 text-center">
+                        <span id="hours" class="font-serif text-xl sm:text-2xl md:text-4xl font-bold text-metallic block">00</span>
+                        <span class="text-[10px] md:text-xs text-chrome/60 uppercase">Jam</span>
+                    </div>
+                    <div class="glass-card p-2 sm:p-3 md:p-4 rounded-xl border border-chrome/20 text-center">
+                        <span id="minutes" class="font-serif text-xl sm:text-2xl md:text-4xl font-bold text-metallic block">00</span>
+                        <span class="text-[10px] md:text-xs text-chrome/60 uppercase">Menit</span>
+                    </div>
+                    <div class="glass-card p-2 sm:p-3 md:p-4 rounded-xl border border-chrome/20 text-center">
+                        <span id="seconds" class="font-serif text-xl sm:text-2xl md:text-4xl font-bold text-crimson block">00</span>
+                        <span class="text-[10px] md:text-xs text-chrome/60 uppercase">Detik</span>
+                    </div>
+                </div>
+                <p id="event-status" class="text-xs text-crimson font-medium hidden">Acara Telah Dimulai / Selesai</p>
+            </div>
+        </section>
+
+        <!-- 6. WHATSAPP RSVP SECTION -->
+        <section class="max-w-2xl mx-auto px-4 py-12">
+            <div class="glass-card rounded-2xl p-5 sm:p-8 text-center border-metallic-glow shadow-2xl space-y-6">
+                <div class="space-y-2">
+                    <i class="fa-brands fa-whatsapp text-crimson text-3xl"></i>
+                    <h2 class="font-serif text-2xl font-bold text-metallic">KONFIRMASI KEHADIRAN</h2>
+                    <p class="text-xs text-chrome/70">Silakan konfirmasikan kehadiran Anda melalui WhatsApp di bawah ini:</p>
+                </div>
+
+                <div class="space-y-3 pt-2">
+                    <!-- Option 1: Insyaallah Hadir -->
+                    <button onclick="sendRSVP('Hadir')" class="w-full py-3.5 px-4 rounded-xl bg-crimson/90 hover:bg-crimson text-white font-medium text-xs md:text-sm tracking-wider uppercase transition-all flex items-center justify-center gap-2 shadow-lg">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Insyaallah Hadir</span>
+                    </button>
+
+                    <!-- Option 2: Belum Dapat Memastikan -->
+                    <button onclick="sendRSVP('Ragu')" class="w-full py-3.5 px-4 rounded-xl bg-deepblack border border-chrome/30 hover:border-chrome text-metallic font-medium text-xs md:text-sm tracking-wider uppercase transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span>Belum Dapat Memastikan</span>
+                    </button>
+
+                    <!-- Option 3: Tidak Dapat Hadir -->
+                    <button onclick="sendRSVP('Tidak')" class="w-full py-3.5 px-4 rounded-xl bg-deepblack border border-chrome/30 hover:border-crimson text-chrome hover:text-white font-medium text-xs md:text-sm tracking-wider uppercase transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                        <span>Tidak Dapat Hadir</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CLOSING SECTION -->
+        <footer class="max-w-3xl mx-auto px-4 pt-12 pb-8 text-center space-y-6">
+            <div class="w-24 h-[1px] bg-gradient-to-r from-transparent via-chrome/40 to-transparent mx-auto"></div>
+            
+            <p class="text-sm text-chrome/80 italic font-serif leading-relaxed max-w-lg mx-auto">
+                "Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir. Terima kasih atas doa dan dukungannya."
+            </p>
+
+            <div class="space-y-1">
+                <p class="font-serif text-lg text-crimson italic">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
+            </div>
+
+            <div class="pt-8">
+                <span class="text-[10px] text-chrome/40 uppercase tracking-[0.4em] font-sans">THE END • THANK YOU</span>
+            </div>
+            <p class="text-[10px] text-chrome/40">© 2026 Riski Sandi Letsoin</p>
+        </footer>
+
+    </main>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+        // CONFIGURATION & DATA
+        const graduateName = "Reza Effendy, S.Kom.";
+        const whatsappAdminNumber = "6281248220273"; // Target WhatsApp Number
+        const eventTargetDate = new Date("2026-11-12T01:00:00+09:00").getTime();
+        
+        let guestName = "Bapak/Ibu/Saudara/i";
+        let isMusicPlaying = false;
+        let isAutoScrolling = false;
+        let autoScrollFrameId = null;
+        let previousAutoScrollTime = null;
+        let autoScrollPosition = 0;
+        const autoScrollSpeed = 20;
+
+        // INITIALIZE URL PARAMETER FOR GUEST NAME (?to=NamaTamu)
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const toParam = urlParams.get('to');
+            if (toParam && toParam.trim() !== "") {
+                guestName = toParam.trim();
+                document.getElementById('guest-name').innerText = guestName;
+            }
+            startCountdown();
+        });
+
+        // OPEN INVITATION ANIMATION & SCROLL
+        function openInvitation() {
+            const coverScreen = document.getElementById('cover-screen');
+            const mainContent = document.getElementById('main-content');
+            const music = document.getElementById('bg-music');
+
+            music.play().then(() => {
+                isMusicPlaying = true;
+                document.getElementById('music-icon').classList.replace('fa-music', 'fa-pause');
+            }).catch((error) => {
+                isMusicPlaying = false;
+                console.error("Audio undangan gagal diputar:", error);
+                showToast("Musik tidak dapat diputar. Periksa file audio/audio.mp3 dan volume perangkat.");
+            });
+
+            // Fade out cover screen
+            coverScreen.classList.add('opacity-0', 'pointer-events-none');
+            
+            setTimeout(() => {
+                coverScreen.style.display = 'none';
+                mainContent.classList.remove('opacity-0');
+                mainContent.classList.add('opacity-100');
+                window.scrollTo(0, 0);
+                startAutoScroll();
+            }, 800);
+        }
+
+        function startAutoScroll() {
+            isAutoScrolling = true;
+            previousAutoScrollTime = null;
+            autoScrollPosition = window.scrollY;
+            updateAutoScrollButton("Jeda scroll otomatis", "fa-pause", true, false);
+            autoScrollFrameId = requestAnimationFrame(continueAutoScroll);
+        }
+
+        function continueAutoScroll(timestamp) {
+            if (!isAutoScrolling) return;
+
+            if (previousAutoScrollTime !== null) {
+                const elapsed = Math.min(timestamp - previousAutoScrollTime, 50);
+                const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+                autoScrollPosition += autoScrollSpeed * elapsed / 1000;
+
+                if (autoScrollPosition >= maxScroll) {
+                    window.scrollTo(0, maxScroll);
+                    isAutoScrolling = false;
+                    autoScrollFrameId = null;
+                    updateAutoScrollButton("Scroll otomatis selesai", "fa-check", false, true);
+                    return;
+                }
+
+                window.scrollTo(0, autoScrollPosition);
+            }
+
+            previousAutoScrollTime = timestamp;
+            autoScrollFrameId = requestAnimationFrame(continueAutoScroll);
+        }
+
+        function toggleAutoScroll() {
+            if (isAutoScrolling) {
+                isAutoScrolling = false;
+                cancelAnimationFrame(autoScrollFrameId);
+                autoScrollFrameId = null;
+                updateAutoScrollButton("Lanjutkan scroll otomatis", "fa-play", false, false);
+                return;
+            }
+
+            startAutoScroll();
+        }
+
+        function pauseAutoScrollForManualInput() {
+            if (!isAutoScrolling) return;
+
+            isAutoScrolling = false;
+            cancelAnimationFrame(autoScrollFrameId);
+            autoScrollFrameId = null;
+            updateAutoScrollButton("Lanjutkan scroll otomatis", "fa-play", false, false);
+        }
+
+        window.addEventListener('wheel', pauseAutoScrollForManualInput, { passive: true });
+        window.addEventListener('touchmove', pauseAutoScrollForManualInput, { passive: true });
+        window.addEventListener('keydown', (event) => {
+            const scrollKeys = ['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '];
+            const target = event.target;
+            const isEditingText = target instanceof HTMLElement
+                && (target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName));
+            const isAutoScrollControl = target instanceof Element && target.closest('#autoscroll-btn');
+
+            if (!isEditingText && !isAutoScrollControl && scrollKeys.includes(event.key)) {
+                pauseAutoScrollForManualInput();
+            }
+        });
+        window.addEventListener('scroll', () => {
+            if (isAutoScrolling && Math.abs(window.scrollY - autoScrollPosition) > 2) {
+                pauseAutoScrollForManualInput();
+            }
+        }, { passive: true });
+
+        function updateAutoScrollButton(label, icon, isPressed, isDisabled) {
+            const button = document.getElementById('autoscroll-btn');
+            button.setAttribute('aria-label', label);
+            button.setAttribute('aria-pressed', String(isPressed));
+            button.title = label;
+            button.disabled = isDisabled;
+            document.getElementById('autoscroll-label').innerText = label;
+            document.getElementById('autoscroll-icon').className = `fa-solid ${icon} text-sm`;
+            button.classList.toggle('opacity-50', isDisabled);
+            button.classList.toggle('cursor-default', isDisabled);
+        }
+
+        // TOGGLE MUSIC PLAYER
+        function toggleMusic() {
+            const music = document.getElementById('bg-music');
+            const musicIcon = document.getElementById('music-icon');
+            
+            if (isMusicPlaying) {
+                music.pause();
+                musicIcon.classList.replace('fa-pause', 'fa-music');
+                isMusicPlaying = false;
+            } else {
+                music.play().then(() => {
+                    musicIcon.classList.replace('fa-music', 'fa-pause');
+                    isMusicPlaying = true;
+                }).catch(() => {
+                    showToast("Musik tidak dapat diputar. Periksa file audio/audio.mp3 dan volume perangkat.");
+                });
+            }
+        }
+
+        // COUNTDOWN TIMER LOGIC
+        function startCountdown() {
+            const timer = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = eventTargetDate - now;
+
+                if (distance < 0) {
+                    clearInterval(timer);
+                    document.getElementById('days').innerText = "00";
+                    document.getElementById('hours').innerText = "00";
+                    document.getElementById('minutes').innerText = "00";
+                    document.getElementById('seconds').innerText = "00";
+                    document.getElementById('event-status').classList.remove('hidden');
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById('days').innerText = String(days).padStart(2, '0');
+                document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+                document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+            }, 1000);
+        }
+
+        // COPY ADDRESS TO CLIPBOARD
+        function copyAddress(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast("Alamat berhasil disalin!");
+            }).catch(() => {
+                // Fallback method
+                const textArea = document.createElement("textarea");
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                showToast("Alamat berhasil disalin!");
+            });
+        }
+
+        // SHOW TOAST NOTIFICATION
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-message').innerText = message;
+            toast.classList.remove('-translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('-translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+
+        // WHATSAPP RSVP HANDLER
+        function sendRSVP(status) {
+            let statusText = "";
+            if (status === 'Hadir') {
+                statusText = "Insyaallah HADIR";
+            } else if (status === 'Ragu') {
+                statusText = "BELUM DAPAT MEMASTIKAN";
+            } else {
+                statusText = "MOHON MAAF TIDAK DAPAT HADIR";
+            }
+
+            const message = `Assalamu'alaikum.\n\nSaya *${guestName}*, telah menerima undangan wisuda dari *${graduateName}*.\n\nSaya ingin menyampaikan konfirmasi bahwa status kehadiran saya: *${statusText}*.\n\nTerima kasih.`;
+            const encodedMessage = encodeURIComponent(message);
+            const waUrl = `https://wa.me/${whatsappAdminNumber}?text=${encodedMessage}`;
+            window.open(waUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
